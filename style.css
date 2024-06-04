@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    background: #ddd;
+}
+#sidenav{
+    width: 280px;
+    background-image: linear-gradient(135deg ,#8BC6Ec 0%,#9599E2 100%);
+    position: fixed;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+    
+#sidenav button{
+    border: none;
+    background: transparent;
+    color: #323232;
+    cursor: pointer;
+    font-size: 17px;
+    
+}
+#sidenav button:hover {
+ color: #000;
+ font-size: 20px;
+ text-shadow: 0px 0px 0px 100% white;
+}
+
+#topnav{
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+    background-image: linear-gradient(62deg,#8EC5FC 0%,#E0C3Fc 100%);
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#topnav h2{
+    margin-right: 20px;
+}
+#toggle-btn{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+#title{
+    margin-top: 10px;
+    padding: 8px 0;
+    font-size: 22px;
+}
+#section{
+    position: relative;
+    margin-left: 280px;
+    height: 100vh;
+    
+}
